@@ -1,9 +1,14 @@
 import React from "react";
-import Laptop from "./components/svgr/Lapbig";
+
+import Navigation from "./components/navigation";
+import Performance from "./layouts/Performance";
 function App() {
   return (
     <div className="App">
-      <Laptop />
+      <Navigation active={false} />
+      <main>
+        <Performance />
+      </main>
     </div>
   );
 }
