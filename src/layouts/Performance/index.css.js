@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// ADD CONTAINER TO COMPONENTS
-
 export const Container = styled.section`
   display: flex;
   height: 100vh;
@@ -10,7 +8,7 @@ export const Container = styled.section`
   justify-content: center;
   background: rgb(120, 190, 255);
   background: linear-gradient(
-    190deg,
+    180deg,
     rgba(120, 190, 255, 1) 0%,
     rgba(24, 82, 194, 1) 100%
   );

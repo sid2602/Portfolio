@@ -1,0 +1,62 @@
+[
+  {
+    "text": "HTML5",
+    "src": "img/html.png"
+  },
+  {
+    "text": "Css3",
+    "src": "img/css.png"
+  },
+  {
+    "text": "Java Script",
+    "src": "img/js.png"
+  },
+  {
+    "text": "React & React hooks",
+    "src": "img/react.png"
+  },
+  {
+    "text": "Redux",
+    "src": "img/redux.png"
+  },
+  {
+    "text": "Next Js",
+    "src": "img/next-js.svg"
+  },
+  {
+    "text": "Node",
+    "src": "img/node.png"
+  },
+  {
+    "text": "Express",
+    "src": "img/express.png"
+  },
+  {
+    "text": "Type Script",
+    "src": "img/typeScript.png"
+  },
+  {
+    "text": "Git",
+    "src": "img/git.png"
+  },
+  {
+    "text": "Material Ui",
+    "src": "img/material.png"
+  },
+  {
+    "text": "Styled Components",
+    "src": "img/styledComponent.png"
+  },
+  {
+    "text": "Gsap",
+    "src": "img/Gsap.svg"
+  },
+  {
+    "text": "Formik & Yup",
+    "src": "img/formik.png"
+  },
+  {
+    "text": "MongoDB",
+    "src": "img/mongodb.png"
+  }
+]
