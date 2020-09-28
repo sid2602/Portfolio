@@ -15,7 +15,7 @@ export const Container = styled.section`
     height: 10vh;
     bottom: 0;
     left: 0;
-    background: #fff;
+    background: #f5f5f5;
     position: absolute;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
   }

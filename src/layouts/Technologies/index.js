@@ -5,7 +5,6 @@ import { SectionHeader } from "../../components/Usefull/index.css";
 import Technolige from "../../components/Technologie";
 import technologiesData from "./technologiesData.json";
 const Technologies = () => {
-  // console.log(technologiesData);
   const technologies = technologiesData.map((item) => (
     <Technolige key={item.name} src={item.src} text={item.text} />
   ));

@@ -28,6 +28,10 @@ export const Container = styled.div`
     flex-basis: 20%;
   }
 
+  @media (max-width: 870px) {
+    height: 120px;
+  }
+
   @media (max-width: 650px) {
     flex-basis: 25%;
     height: 100px;

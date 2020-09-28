@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Countries Info",
+    "text": "Application made with Next js, Type Script and Material Ui. With this app you can get Basic Information about any coutry in the world",
+    "img": "img/countries.png",
+    "live": "https://countries-info-nu.vercel.app",
+    "github": "https://github.com/sid2602/CountriesInfo"
+  },
+  {
+    "name": "Social Media App",
+    "text": "The react app, which allows add posts, like other users posts, change your details. possibility to create own account. Project made with React, node js and mongodb. You can login with: email: user@gmail.com and passord: User123!",
+    "img": "img/social.png",
+    "live": "https://socialmediaaplication.herokuapp.com",
+    "github": "https://github.com/sid2602/SocialMediaApp"
+  },
+  {
+    "name": "Youtube Downloader",
+    "text": "With this app you can find film/music on Youtube and download it in a lot of formats and qualities",
+    "img": "img/yt.png",
+    "live": "https://youtube-downloader1.herokuapp.com/",
+    "github": "https://github.com/sid2602/YoutubeDownloader"
+  },
+  {
+    "name": "Book Store",
+    "text": "Using this app you can find book what you want and by it, get basic information about this book like author and description. Project made with React, Redux and Gsap.",
+    "img": "img/bookStore.png",
+    "live": "https://sid2602.github.io/Bookstore/",
+    "github": "https://github.com/sid2602/Bookstore"
+  },
+  {
+    "name": "Wheather App",
+    "text": "A web application where you can see the current weather around the world  Project made withReact and Gsap.",
+    "img": "img/wheatherApp.png",
+    "live": "https://sid2602.github.io/WheaterApp-End-17.03.2020/",
+    "github": "https://github.com/sid2602/WheaterApp-End-17.03.2020"
+  }
+]
