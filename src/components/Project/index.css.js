@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProjectContainer = styled.div`
   width: 90%;
 
-  margin: 4em 0;
+  margin: 6em 0;
   display: flex;
 
   justify-content: space-around;
@@ -11,6 +11,7 @@ export const ProjectContainer = styled.div`
   @media (max-width: 1025px) {
     flex-direction: column;
     align-items: center;
+    margin: 4em 0;
   }
 `;
 

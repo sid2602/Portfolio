@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const TechnologieContainer = styled.div`
   flex-basis: 15%;
   width: 150px;
   margin: 0 1em;

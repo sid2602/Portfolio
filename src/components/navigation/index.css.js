@@ -60,6 +60,7 @@ export const List = styled.ul`
   }
 
   @media (max-width: 750px) {
+    // display: ${({ active }) => (active ? "flex" : "none")};
     position: fixed;
     justify-content: center;
     align-items: center;
@@ -68,7 +69,7 @@ export const List = styled.ul`
     margin: 0;
     left: ${({ active }) => (active ? "0" : "100%")};
     background-color: rgba(120, 190, 255, 0.9);
-    transition: 0.2s 0.2s;
+    transition: 0.2s 0.2s left;
     top: 0;
     width: 100vw;
     height: 100vh;

@@ -13,7 +13,7 @@ const Project = ({ props, order }) => {
 
   return (
     <ProjectContainer>
-      <Content order={order}>
+      <Content order={order} className="Content">
         <h3>{name}</h3>
         <p>{text}</p>
         <LinkContainer>
@@ -21,7 +21,7 @@ const Project = ({ props, order }) => {
           <Link github src={github} />
         </LinkContainer>
       </Content>
-      <Screenshoot order={order}>
+      <Screenshoot order={order} className="ScreenShoot">
         <img src={img} alt={name} />
       </Screenshoot>
     </ProjectContainer>

@@ -15,4 +15,8 @@ export const PortfolioLink = styled.p`
     font-size: 1em;
     margin: 1em auto;
   }
+
+  @media (max-width: 650px) {
+    font-size: 1em;
+  }
 `;

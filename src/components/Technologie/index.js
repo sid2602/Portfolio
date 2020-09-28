@@ -1,15 +1,15 @@
 import React from "react";
 
-import { Container } from "./index.css";
+import { TechnologieContainer } from "./index.css";
 
 const Technolige = ({ text, src }) => {
   return (
-    <Container>
+    <TechnologieContainer>
       <div>
         <img src={src} alt={text} />
       </div>
       <p>{text}</p>
-    </Container>
+    </TechnologieContainer>
   );
 };
 

@@ -45,12 +45,12 @@ const SvgComponent = (props) => {
           .to(item, {
             duration: 1,
             opacity: 1,
-            delay: 2,
+            delay: 1,
           })
           .to(item, {
             duration: 1,
             opacity: 0,
-            delay: delay,
+            delay: delay + 1,
           });
 
         timeline.repeat(-1);
