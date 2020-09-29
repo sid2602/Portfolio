@@ -1,10 +1,10 @@
 import React from "react";
 
 import { ContactContainer, Icons } from "./index.css";
-import { SectionHeader } from "../../components/Usefull/index.css";
+import { SectionHeader } from "../../components/SectionHeader/index.css";
 const Contact = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <SectionHeader primary>Contact</SectionHeader>
       <Icons>
         <a href="mailto:kornaus.filip@gmail.com">

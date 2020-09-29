@@ -1,10 +1,9 @@
 import styled from "styled-components";
+import { Container } from "../../components/Container/index.css";
 
-export const Container = styled.section`
-  display: flex;
+export const PerformaceContainer = styled(Container)`
+  flex-direction: row;
   height: 100vh;
-
-  align-items: center;
   justify-content: center;
   background: rgb(120, 190, 255);
   background: linear-gradient(

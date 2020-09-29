@@ -6,10 +6,11 @@ import Technologies from "./layouts/Technologies";
 import Projects from "./layouts/Projects";
 import Contact from "./layouts/Contact";
 import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="App">
-      <Navigation active={false} />
+      <Navigation />
       <main>
         <Performance />
         <Technologies />

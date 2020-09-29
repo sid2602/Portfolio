@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { Container, Header, Arrow } from "./index.css";
+import { PerformaceContainer, Header, Arrow } from "./index.css";
 import LapBig from "../../components/svgr/Lapbig";
 import gsap from "gsap";
 import TextPlugin from "gsap/TextPlugin";
@@ -35,20 +35,18 @@ const Performance = () => {
   });
 
   return (
-    <>
-      <Container>
-        <Header>
-          <h1 className="name">Filip Kornaus</h1>
-          <h2 className="motto">Websites created with passion</h2>
-        </Header>
-        <div>
-          <LapBig />
-        </div>
-        <Arrow href="#technologies" className="Arrow">
-          <i className="fas fa-chevron-down" />
-        </Arrow>
-      </Container>
-    </>
+    <PerformaceContainer>
+      <Header>
+        <h1 className="name">Filip Kornaus</h1>
+        <h2 className="motto">Websites created with passion</h2>
+      </Header>
+      <div>
+        <LapBig />
+      </div>
+      <Arrow href="#technologies" className="Arrow">
+        <i className="fas fa-chevron-down" />
+      </Arrow>
+    </PerformaceContainer>
   );
 };
 

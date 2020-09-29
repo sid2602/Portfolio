@@ -1,11 +1,9 @@
 import styled from "styled-components";
+import { Container } from "../../components/Container/index.css";
 
-export const Container = styled.section`
-  display: flex;
-  flex-direction: column;
+export const ProjectsContainer = styled(Container)`
   background-color: #f5f5f5;
   min-height: 100vh;
-  align-items: center;
 `;
 
 export const PortfolioLink = styled.p`

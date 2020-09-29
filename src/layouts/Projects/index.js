@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
-import { Container, PortfolioLink } from "./index.css";
-import { SectionHeader } from "../../components/Usefull/index.css";
+import { ProjectsContainer, PortfolioLink } from "./index.css";
+import { SectionHeader } from "../../components/SectionHeader/index.css";
 import Link from "../../components/Link";
 import projectData from "./projectsData.json";
 import Project from "../../components/Project";
@@ -65,14 +65,14 @@ const Projects = () => {
   }, []);
 
   return (
-    <Container>
+    <ProjectsContainer id="projects">
       <SectionHeader>Projects</SectionHeader>
       {projects}
       <PortfolioLink className="PortfolioLink">
         To see code of my portfolio click button below
         <Link github src="https://github.com/sid2602/Portfolio" />
       </PortfolioLink>
-    </Container>
+    </ProjectsContainer>
   );
 };
 

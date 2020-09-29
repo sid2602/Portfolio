@@ -6,12 +6,12 @@ export const Nav = styled.nav`
   top: 0;
   width: 100%;
   height: 3em;
-  background-color: ${({ active }) =>
-    active ? "rgba(120, 190, 255,1)" : "rgba(120, 190, 255,0)"};
+  background-color: ${({ active }) => (active ? "#51abff" : "none")};
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
+  transition: 0.2s;
   z-index: 1000;
 `;
 

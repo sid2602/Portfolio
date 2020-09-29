@@ -1,9 +1,6 @@
 import styled from "styled-components";
-
-export const ContactContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+import { Container } from "../../components/Container/index.css";
+export const ContactContainer = styled(Container)`
   justify-content: center;
   height: 80vh;
   background-color: #78beff;

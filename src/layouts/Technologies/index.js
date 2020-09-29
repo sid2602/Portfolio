@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import { Container, FlexContainer } from "./index.css";
-import { SectionHeader } from "../../components/Usefull/index.css";
+import { SectionHeader } from "../../components/SectionHeader/index.css";
 import Technolige from "../../components/Technologie";
 import technologiesData from "./technologiesData.json";
 import gsap from "gsap";
@@ -32,7 +32,7 @@ const Technologies = () => {
     <Technolige key={item.name} src={item.src} text={item.text} />
   ));
   return (
-    <Container>
+    <Container id="technologies">
       <SectionHeader primary className="Technologie">
         Technologies
       </SectionHeader>

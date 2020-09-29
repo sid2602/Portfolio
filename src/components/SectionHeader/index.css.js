@@ -12,7 +12,6 @@ export const SectionHeader = styled.h2`
 
   @media (max-width: 1024px) {
     padding: 0;
-    margin-top: 1em;
   }
 
   @media (max-width: 650px) {

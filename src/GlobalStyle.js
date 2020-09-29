@@ -6,11 +6,13 @@ export const GlobalStyle = createGlobalStyle`
 
   *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   body{
     font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
+    
   }
 
   a{

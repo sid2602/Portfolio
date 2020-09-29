@@ -3,8 +3,13 @@ import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 import { Nav, NavLink, List, Hamburger } from "./index.css";
 
-const Navigation = ({ active }) => {
+const Navigation = () => {
   useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    window.scroll({
+      behavior: "smooth",
+    });
+
     gsap.from(".links", {
       x: "-=40",
       y: "-=25",
@@ -28,11 +33,21 @@ const Navigation = ({ active }) => {
     setActiveMenu(bool);
   };
 
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
   const [activeMenu, setActiveMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   return (
     <>
-      <Nav active={active}>
+      <Nav active={scrolled}>
         <NavLink href="#" name={1} className="links">
           Filip Kornaus
         </NavLink>
