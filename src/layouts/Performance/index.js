@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 import { PerformaceContainer, Header, Arrow } from "./index.css";
 import LapBig from "../../components/svgr/Lapbig";
@@ -6,6 +6,10 @@ import gsap from "gsap";
 import TextPlugin from "gsap/TextPlugin";
 
 const Performance = () => {
+  const nameRef = useRef(null);
+  const mottoRef = useRef(null);
+  const arrowRef = useRef(null);
+
   useEffect(() => {
     gsap.registerPlugin(TextPlugin);
 
@@ -13,37 +17,37 @@ const Performance = () => {
     const arrow = gsap.timeline();
 
     tl.fromTo(
-      ".name",
+      nameRef.current,
       { opacity: 0, x: "-=15" },
       { duration: 1, x: "+=15", opacity: 1, delay: 0.5 }
     );
 
     tl.fromTo(
-      ".motto",
+      mottoRef.current,
       { opacity: 0, y: "-=20" },
       { duration: 1, y: "+=20", opacity: 1 }
     );
 
     arrow
       .fromTo(
-        ".Arrow",
+        arrowRef.current,
         { y: "-=10", opacity: 0 },
         { y: "0", opacity: 1, duration: 3, delay: 2 }
       )
-      .to(".Arrow", { y: "+=10", opacity: 0, delay: 2, duration: 3 });
+      .to(arrowRef.current, { y: "+=10", opacity: 0, delay: 2, duration: 3 });
     arrow.repeat(-1);
   });
 
   return (
-    <PerformaceContainer>
+    <PerformaceContainer id="Home">
       <Header>
-        <h1 className="name">Filip Kornaus</h1>
-        <h2 className="motto">Websites created with passion</h2>
+        <h1 ref={nameRef}>Filip Kornaus</h1>
+        <h2 ref={mottoRef}>Websites created with passion</h2>
       </Header>
       <div>
         <LapBig />
       </div>
-      <Arrow href="#technologies" className="Arrow">
+      <Arrow href="#technologies" ref={arrowRef}>
         <i className="fas fa-chevron-down" />
       </Arrow>
     </PerformaceContainer>

@@ -1,0 +1,17 @@
+[
+  {
+    "href": "mailto:kornaus.filip@gmail.com",
+    "class": "fas fa-envelope",
+    "text": "Contact me by email kornaus.filip@gmail.com"
+  },
+  {
+    "href": "https://www.facebook.com/filip.kornaus/",
+    "class": "fab fa-facebook",
+    "text": "Send me message on Facebook"
+  },
+  {
+    "href": "https://github.com/sid2602",
+    "class": "fab fa-github",
+    "text": "Whatch my profile on github"
+  }
+]

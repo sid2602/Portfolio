@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import gsap from "gsap";
 import { Nav, NavLink, List, Hamburger } from "./index.css";
 
 const Navigation = () => {
+  const hamburger = useRef(null);
+  const links = useRef([]);
+  links.current = [];
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    window.scroll({
-      behavior: "smooth",
-    });
-
-    gsap.from(".links", {
+    links.current.push(hamburger.current);
+    gsap.from(links.current, {
       x: "-=40",
       y: "-=25",
       opacity: 0,
@@ -21,10 +22,16 @@ const Navigation = () => {
     });
   }, []);
 
+  const addToLinks = (e) => {
+    if (e && !links.current.includes(e)) {
+      links.current.push(e);
+    }
+  };
+
   const setActive = (bool) => {
     let rotate = bool ? 90 : 0;
 
-    gsap.to(".hamburger", {
+    gsap.to(hamburger.current, {
       duration: 0.5,
       rotation: rotate,
       ease: "power1.out",
@@ -45,32 +52,26 @@ const Navigation = () => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const navigationLinks = ["Home", "Technologies", "Projects", "Contact"];
+
+  const linksMap = navigationLinks.map((item) => (
+    <li ref={addToLinks} key={item}>
+      <NavLink href={`#${item}`}>{item}</NavLink>
+    </li>
+  ));
+
   return (
     <>
       <Nav active={scrolled}>
-        <NavLink href="#" name={1} className="links">
+        <NavLink href="#Home" name={1} ref={addToLinks}>
           Filip Kornaus
         </NavLink>
-        <Hamburger
-          className="links hamburger"
-          onClick={() => setActive(!activeMenu)}
-        >
+        <Hamburger ref={hamburger} onClick={() => setActive(!activeMenu)}>
           <i className="fas fa-bars"></i>
         </Hamburger>
 
         <List active={activeMenu} onClick={() => setActive(false)}>
-          <li className="links">
-            <NavLink href="#">Home</NavLink>
-          </li>
-          <li className="links">
-            <NavLink href="#technologies">Technologies</NavLink>
-          </li>
-          <li className="links">
-            <NavLink href="#projects">Projects</NavLink>
-          </li>
-          <li className="links">
-            <NavLink href="#contact">Contact</NavLink>
-          </li>
+          {linksMap}
         </List>
       </Nav>
     </>

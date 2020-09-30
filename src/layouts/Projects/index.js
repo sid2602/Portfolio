@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 import { ProjectsContainer, PortfolioLink } from "./index.css";
 import { SectionHeader } from "../../components/SectionHeader/index.css";
@@ -9,66 +9,31 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Projects = () => {
-  const projects = projectData.map((item, index) => (
-    <Project key={item.name} props={item} order={index} />
-  ));
+  const portfolioLinkRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const contents = document.querySelectorAll(".Content");
-    const screenShoots = document.querySelectorAll(".ScreenShoot");
-
-    contents.forEach((content) => {
-      gsap.fromTo(
-        content.children,
-        { opacity: 0, y: "+=10" },
-        {
-          duration: 1,
-          opacity: 1,
-          y: "0",
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: content,
-            start: "top 60%",
-          },
-        }
-      );
-    });
-
-    screenShoots.forEach((shoot, index) => {
-      gsap.fromTo(
-        shoot,
-        { opacity: 0, x: `${index % 2 === 0 ? "+=10" : "-=10"}` },
-        {
-          duration: 1,
-          opacity: 1,
-          x: "0",
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: shoot,
-            start: "top 60%",
-          },
-        }
-      );
-    });
-
-    gsap.from(".PortfolioLink", {
+    gsap.from(portfolioLinkRef.current, {
       opacity: 0,
       duration: 1,
       delay: 0.2,
       y: "+=10",
       scrollTrigger: {
-        trigger: ".PortfolioLink",
+        trigger: portfolioLinkRef.current,
         start: "top bottom",
       },
     });
   }, []);
 
+  const projects = projectData.map((item, index) => (
+    <Project key={item.name} props={item} order={index} />
+  ));
+
   return (
-    <ProjectsContainer id="projects">
+    <ProjectsContainer id="Projects">
       <SectionHeader>Projects</SectionHeader>
       {projects}
-      <PortfolioLink className="PortfolioLink">
+      <PortfolioLink ref={portfolioLinkRef}>
         To see code of my portfolio click button below
         <Link github src="https://github.com/sid2602/Portfolio" />
       </PortfolioLink>

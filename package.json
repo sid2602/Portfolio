@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "svg-to-jsx": "svgr < src/svgr/lapbig.svg > src/Lapbig.js --svgo-config  src/svgr/svgo.json "
+    "svg-to-jsx": "svgr < src/components/svgr/lapbig.svg > src/Lapbig.js --svgo-config  src/components/svgr/svgo.json "
   },
   "eslintConfig": {
     "extends": "react-app"

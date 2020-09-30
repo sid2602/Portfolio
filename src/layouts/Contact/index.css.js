@@ -74,4 +74,14 @@ export const Icons = styled.div`
       font-size: 0.8em;
     }
   }
+
+  @media (max-width: 400px) {
+    i {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 0.7em;
+    }
+  }
 `;
