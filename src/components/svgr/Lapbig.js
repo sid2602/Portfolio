@@ -44,7 +44,7 @@ function SvgComponent(props) {
     const t2 = gsap.timeline({ defaults: { ease: "power1.out" } });
 
     const animation = (timeline, array, delay) => {
-      array.current.map((item) => {
+      array.current.forEach((item) => {
         timeline
           .fromTo(
             item,
