@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { PerformaceContainer, Header, Arrow } from "./index.css";
 import LapBig from "../../components/svgr/Lapbig";
 import gsap from "gsap";
-import TextPlugin from "gsap/TextPlugin";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Performance = () => {
   const nameRef = useRef(null);
@@ -11,7 +11,7 @@ const Performance = () => {
   const arrowRef = useRef(null);
 
   useEffect(() => {
-    gsap.registerPlugin(TextPlugin);
+    gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
     const arrow = gsap.timeline();

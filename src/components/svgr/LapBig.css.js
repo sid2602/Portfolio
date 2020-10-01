@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SVG = styled.svg`
+export const SVG = styled.svg`
   width: 600px;
   height: 700px;
 
@@ -25,4 +25,6 @@ const SVG = styled.svg`
   }
 `;
 
-export default SVG;
+export const Laptop = styled.g`
+  opacity: 0;
+`;

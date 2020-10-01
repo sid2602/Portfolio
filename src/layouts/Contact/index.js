@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-
+import React from "react";
 import { ContactContainer, Icons } from "./index.css";
 import { SectionHeader } from "../../components/SectionHeader/index.css";
 import iconsData from "./iconsData.json";

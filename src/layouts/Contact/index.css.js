@@ -14,9 +14,7 @@ export const ContactContainer = styled(Container)`
     left: 0;
     background: #f5f5f5;
     position: absolute;
-    transform: rotate(180deg);
-    clip-path: polygon(100% 0, 0 100%, 100% 100%);
-    border: 1px solid #f5f5f5;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
   }
 
   h2 {

@@ -11,15 +11,19 @@ const Navigation = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     links.current.push(hamburger.current);
-    gsap.from(links.current, {
-      x: "-=40",
-      y: "-=25",
-      opacity: 0,
-      stagger: 0.15,
-      delay: 1,
-      duration: 1,
-      ease: "back.out(1.7)",
-    });
+    gsap.fromTo(
+      links.current,
+      { x: "-=40", y: "-=25", opacity: 0 },
+      {
+        x: 0,
+        y: 0,
+        opacity: 1,
+        stagger: 0.15,
+        delay: 1,
+        duration: 1,
+        ease: "back.out(1.7)",
+      }
+    );
   }, []);
 
   const addToLinks = (e) => {

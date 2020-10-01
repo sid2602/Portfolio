@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-import { ProjectsContainer, PortfolioLink } from "./index.css";
+import { ProjectsContainer, PortfolioLink, Circle } from "./index.css";
 import { SectionHeader } from "../../components/SectionHeader/index.css";
 import Link from "../../components/Link";
 import projectData from "./projectsData.json";
@@ -31,6 +31,8 @@ const Projects = () => {
 
   return (
     <ProjectsContainer id="Projects">
+      <Circle top={35} />
+      <Circle top={80} primary />
       <SectionHeader>Projects</SectionHeader>
       {projects}
       <PortfolioLink ref={portfolioLinkRef}>

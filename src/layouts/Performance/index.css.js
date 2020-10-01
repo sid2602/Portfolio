@@ -29,11 +29,13 @@ export const Header = styled.header`
     color: white;
     font-size: 5em;
     margin: 0;
+    opacity: 0;
   }
 
   h2 {
     color: #dedede;
     font-weight: normal;
+    opacity: 0;
   }
 
   @media (max-width: 1215px) {

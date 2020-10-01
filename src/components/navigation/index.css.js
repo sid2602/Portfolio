@@ -13,6 +13,10 @@ export const Nav = styled.nav`
   padding: 0 2em;
   transition: 0.2s;
   z-index: 1000;
+
+  & > a {
+    opacity: 0;
+  }
 `;
 
 export const NavLink = styled.a`
@@ -54,13 +58,14 @@ export const List = styled.ul`
   display: flex;
   left: 0;
   background-color: rgba(120, 190, 255, 0);
+
   li {
     margin: 0 1em;
     transition: 0.2;
+    opacity: 0;
   }
 
   @media (max-width: 750px) {
-    // display: ${({ active }) => (active ? "flex" : "none")};
     position: fixed;
     justify-content: center;
     align-items: center;
@@ -78,7 +83,6 @@ export const List = styled.ul`
     li {
       padding: 0.5em;
       font-size: 2em;
-      opacity: 1;
     }
   }
 `;
