@@ -47,7 +47,7 @@ const Performance = () => {
       <div>
         <LapBig />
       </div>
-      <Arrow href="#technologies" ref={arrowRef}>
+      <Arrow href="#Technologies" ref={arrowRef}>
         <i className="fas fa-chevron-down" />
       </Arrow>
     </PerformaceContainer>
