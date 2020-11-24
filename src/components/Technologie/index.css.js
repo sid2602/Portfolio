@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const TechnologieContainer = styled.div`
   flex-basis: 15%;
-  width: 150px;
+  width: 130px;
   margin: 0 1em;
-  height: 180px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  height: 110vh;
+  min-height: 130vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -18,6 +18,10 @@ export const Container = styled.section`
     background: #f5f5f5;
     position: absolute;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+
+  @media (max-width: 1024px) {
+    min-height: 110vh;
   }
 `;
 

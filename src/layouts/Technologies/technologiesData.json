@@ -48,6 +48,10 @@
     "src": "img/styledComponent.png"
   },
   {
+    "text": "Emotion.js",
+    "src": "img/emotion.png"
+  },
+  {
     "text": "Gsap",
     "src": "img/Gsap.svg"
   },
@@ -58,5 +62,9 @@
   {
     "text": "MongoDB",
     "src": "img/mongodb.png"
+  },
+  {
+    "text": "Strapi",
+    "src": "img/strapi.png"
   }
 ]

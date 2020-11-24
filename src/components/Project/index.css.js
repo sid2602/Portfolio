@@ -42,6 +42,7 @@ export const Content = styled.div`
 
     p {
       font-size: 1.5em;
+      text-align: center;
     }
   }
 
