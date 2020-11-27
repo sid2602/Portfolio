@@ -3,7 +3,7 @@
     "name": "Smaki Whisky",
     "text": "Online shop made with Next.js, TypeScript and Strapi. You can search for products by country of origin, name and type of whiskey. It has lots of features like sorting, filtering, payment simulation and much more",
     "img": "img/SmakiWhisky.jpg",
-    "live": "https://smaki-whisky-2qcps7tss.vercel.app/",
+    "live": "https://smaki-whisky.vercel.app/",
     "github": "https://github.com/sid2602/SmakiWhisky"
   },
   {
