@@ -7,7 +7,7 @@ import projectData from "./projectsData.json";
 import Project from "../../components/Project";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
+import SubHeader from "../../components/SubHeader/index.css";
 const Projects = () => {
   const portfolioLinkRef = useRef(null);
 
@@ -34,6 +34,7 @@ const Projects = () => {
       <Circle top={35} />
       <Circle top={80} primary />
       <SectionHeader>Projects</SectionHeader>
+      <SubHeader>Some apps need time to wake up. Wait for them :D</SubHeader>
       {projects}
       <PortfolioLink ref={portfolioLinkRef}>
         To see code of my portfolio click button below

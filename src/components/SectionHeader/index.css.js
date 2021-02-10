@@ -7,7 +7,7 @@ export const SectionHeader = styled.h2`
   text-align: center;
   display: block;
   margin: 0;
-  padding: 1em 0;
+  padding: 1em 0 0.8rem 0;
   width: 100%;
 
   @media (max-width: 1024px) {

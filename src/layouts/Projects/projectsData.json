@@ -1,5 +1,12 @@
 [
   {
+    "name": "Calisthenic dictonary",
+    "text": "The application allows you to keep a training diary. You can create your own routines as well as monitor your workouts by adding series. Website created by Next.js, Typescript, Strapi and Material UI .You can login with: email: user@gmail.com and passord: User123! Work on the application is still in progress! ",
+    "img": "img/calisthenic.jpg",
+    "live": "https://calisthenic-dictonary.vercel.app/",
+    "github": "https://github.com/sid2602/calisthenic_dictonary"
+  },
+  {
     "name": "Smaki Whisky",
     "text": "Online shop made with Next.js, TypeScript and Strapi. You can search for products by country of origin, name and type of whiskey. It has lots of features like sorting, filtering, payment simulation and much more",
     "img": "img/SmakiWhisky.jpg",
